@@ -1,6 +1,6 @@
-# Shout [![](https://badge.fury.io/js/shout.png)](https://www.npmjs.org/package/shout)
+# Crypti-IRC [![](https://badge.fury.io/js/shout.png)](https://www.npmjs.org/package/shout)
 
-### [Try the Demo](http://demo.shout-irc.com/)
+### [Try it Out](https://crypti-irc.herokuapp.com/)
 
 __What is it?__  
 Shout is a web IRC client that you host on your own server.
