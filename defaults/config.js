@@ -40,7 +40,7 @@ module.exports = {
 	// @type     string
 	// @default  "themes/example.css"
 	//
-	theme: "themes/example.css",
+	theme: "themes/morning.css",
 
 	//
 	// Autoload users
@@ -155,7 +155,7 @@ module.exports = {
 		// @type     string
 		// @default  "shout-user"
 		//
-		nick: "shout-user",
+		nick: "crypti-user",
 
 		//
 		// Username
@@ -163,7 +163,7 @@ module.exports = {
 		// @type     string
 		// @default  "shout-user"
 		//
-		username: "shout-user",
+		username: "crypti-user",
 
 		//
 		// Real Name
@@ -171,7 +171,7 @@ module.exports = {
 		// @type     string
 		// @default  "Shout User"
 		//
-		realname: "Shout User",
+		realname: "Crypti User",
 
 		//
 		// Channels
@@ -179,7 +179,7 @@ module.exports = {
 		// @type     string
 		// @default  "#foo, #shout-irc"
 		//
-		join: "#foo, #shout-irc"
+		join: "#CryptiTalk"
 	},
 
 	//
