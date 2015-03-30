@@ -40,7 +40,7 @@ module.exports = {
 	// @type     string
 	// @default  "themes/example.css"
 	//
-	theme: "themes/zenburn.css",
+	theme: "themes/example.css",
 
 	//
 	// Autoload users
