@@ -3,7 +3,7 @@
 ### [Try it Out](https://crypti-irc.herokuapp.com/)
 
 __What is it?__  
-Shout is a web IRC client that you host on your own server.
+A web-based IRC client
 
 __What features does it have?__  
 - Multiple user support
@@ -11,22 +11,6 @@ __What features does it have?__
 - Connect from multiple devices at once
 - Responsive layout — works well on your smartphone
 - _.. and more!_
-
-## Install
-
-```
-sudo npm install -g shout
-```
-
-## Usage
-
-When the install is complete, go ahead and run this in your terminal:
-
-```
-shout --help
-```
-
-For more information, read the [documentation](http://shout-irc.com/docs/).
 
 ## Development setup
 
