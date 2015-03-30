@@ -477,7 +477,7 @@ $(function() {
 			.sticky()
 			.end();
 
-		var title = "Shout";
+		var title = "Crypti";
 		if (chan.data("title")) {
 			title = chan.data("title") + " — " + title;
 		}
