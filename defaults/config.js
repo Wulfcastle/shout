@@ -179,7 +179,7 @@ module.exports = {
 		// @type     string
 		// @default  "#foo, #shout-irc"
 		//
-		join: "#CryptiTalk"
+		join: "#CryptiTalk, #crypti-trading, #crypti-announcements, #crypti-news, #crypti-marketing"
 	},
 
 	//
