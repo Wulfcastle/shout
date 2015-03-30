@@ -191,6 +191,7 @@ button {
 	color: #84ce88;
 	font-size: 15px;
 	font-weight: bold;
+    padding-bottom: 25px;
 }
 #sidebar .chan:first-child:hover,
 #sidebar .chan:first-child.active {
