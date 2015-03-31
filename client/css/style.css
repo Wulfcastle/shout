@@ -215,7 +215,7 @@ button {
 }
 #sidebar .chan.query:before,
 #chat .query .title:before {
-	content: "\f198";
+	content: "\f0e6";
 }
 #sidebar .chan.channel:before,
 #chat .channel .title:before {
