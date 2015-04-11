@@ -2,6 +2,7 @@ var _ = require("lodash");
 var bcrypt = require("bcrypt-nodejs");
 var Client = require("./client");
 var ClientManager = require("./clientManager");
+var cookieParser = require('cookie-parser');
 var express = require("express");
 var fs = require("fs");
 var io = require("socket.io");
@@ -16,6 +17,7 @@ module.exports = function(options) {
 	config = _.extend(config, options);
 
 	var app = express()
+        .use(cookieParser())
 		.use(index)
 		.use(express.static("client"));
 
@@ -77,6 +79,24 @@ function index(req, res, next) {
 			require("../package.json"),
 			config
 		);
+        
+        try {
+			var settings = JSON.parse(req.cookies.settings);
+			if(settings.theme) {
+				data.theme = "themes/" + settings.theme + ".css";
+			}
+		} catch(e) {
+			// Do nothing if cookie cannot be parsed.
+		}
+		
+		data.themes = [];
+		_.each(fs.readdirSync("client/themes"), function(file) {
+		    var m = file.match(/(.+)\.css/);
+		    if(m) {
+				data.themes.push(m[1]);
+		    }
+		});
+        
 		res.setHeader("Content-Type", "text/html");
 		res.writeHead(200);
 		res.end(_.template(
