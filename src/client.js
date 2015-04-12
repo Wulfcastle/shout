@@ -81,18 +81,18 @@ Client.prototype.emit = function(event, data) {
 	var config = this.config || {};
 	if (config.log === true) {
 		if (event == "msg") {
-			var target = this.find(data.chan);
-			if (target) {
-				var chan = target.chan.name;
-				if (target.chan.type == Chan.Type.LOBBY) {
-					chan = target.network.host;
-				}
-				log.write(
-					this.name,
-					target.network.host,
-					chan,
-					data.msg
-				);
+		var target = this.find(data.chan);
+    		if (target) {
+    			var chan = target.chan.name;
+    			if (target.chan.type == Chan.Type.LOBBY) {
+    				chan = target.network.host;
+                }
+    			log.write(
+    				this.name,
+    				target.network.host,
+    				chan,
+    				data.msg
+			    );
 			}
 		}
 	}
