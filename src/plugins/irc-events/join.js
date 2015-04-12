@@ -16,14 +16,14 @@ module.exports = function(irc, network) {
 			client.save();
             
 			log.load(irc.me, client.name, network.host, data.channel, function(messages) {
-+				if (typeof messages !== "undefined") {
-+					chan.messages = messages.concat(chan.messages);
-+				}
-+
-+				client.emit("join", {
-+					network: network.id,
-+					chan: chan
-+				});
+				if (typeof messages !== "undefined") {
+					chan.messages = messages.concat(chan.messages);
+				}
+
+				client.emit("join", {
+					network: network.id,
+					chan: chan
+				});
 			});
 		}
 		var users = chan.users;
